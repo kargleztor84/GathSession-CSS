@@ -8,20 +8,18 @@ main {
         gap: 40px;
 
         .hero__left {
-
+            align-self: flex-end;
             flex: 1; // Esto es el espasiad de hero__left
 
             &--title {
                 font-family: abstracts.$code-font-stack;
-                font-size: 70px;
+                font-size: 65px;
                 letter-spacing: 1px;
-                line-height: 80px;
-                margin-top: 20px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
 
             &--subtitle {
-                width: 80%;
+                width: 85%;
                 font-size: 18px;
                 font-weight: 100;
                 line-height: 30px;
@@ -42,12 +40,22 @@ main {
                     padding: 15px 55px;
                     background-color: #DB2A6B;
                     border-radius: 14px 14px 14px 0;
+
+                    &:hover {
+                        background-color: #991244;
+                        transition: .6s;
+                    }
                 }
 
                 &__secund {
                     padding: 15px 30px;
                     text-decoration: underline;
                     position: relative;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: .6s;
+                    }
 
                     &::after {
                         content: '';
@@ -76,6 +84,7 @@ main {
                         padding: 10px;
                         border-radius: 15px;
                         background-color: #464751;
+                        margin-right: 8px;
                     }
 
                     h4 {
@@ -100,8 +109,8 @@ main {
             'uno tres cinco'
             'uno cuatro cinco'
             'dos cuatro cinco';
-            grid-template-columns: repeat(3, 200px);
-            grid-template-rows: repeat(3, 200px);
+            grid-template-columns: repeat(3, 220px);
+            grid-template-rows: repeat(3, 220px);
             gap: 25px;
             
             img.uno {
