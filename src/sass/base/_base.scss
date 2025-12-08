@@ -13,9 +13,9 @@
   margin: 0;
 }
 
-html {
-  box-sizing: border-box;
-}
+// html {
+//   box-sizing: border-box;
+// }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -32,27 +32,12 @@ html {
 /**
  * Basic styles for links
  */
+
 a {
   text-decoration: none;
   color: abstracts.$text-color;
   
-  @include abstracts.on-event {
-    &::before {
-      content: '';
-      position: absolute;
-      background-color: #DB2A6B;
-      width: 40%;
-      height: 3px;
-      border-radius: 2px;
-      bottom: 0;
-      animation: undeline .6s 1;
-    }
-
-    @keyframes undeline {
-      from {width: 1%;}
-      to {width: 40%;}
-    }
-  }
+  
 }
 
 li {

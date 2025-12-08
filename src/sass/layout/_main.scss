@@ -1,5 +1,139 @@
+@use '../abstracts';
+
 main {
     .container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+
+        .hero__left {
+
+            flex: 1; // Esto es el espasiad de hero__left
+
+            &--title {
+                font-family: abstracts.$code-font-stack;
+                font-size: 70px;
+                letter-spacing: 1px;
+                line-height: 80px;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+
+            &--subtitle {
+                width: 80%;
+                font-size: 18px;
+                font-weight: 100;
+                line-height: 30px;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+            }
+
+            &--nav {
+
+                margin-bottom: 120px;
+                a {
+                    display: inline-block;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+
+                &__first {
+                    padding: 15px 55px;
+                    background-color: #DB2A6B;
+                    border-radius: 14px 14px 14px 0;
+                }
+
+                &__secund {
+                    padding: 15px 30px;
+                    text-decoration: underline;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 35px;
+                        height: 24px;
+                        padding-left: 30px;
+                        background-image: url(../../../img/Arrow.svg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                }
+            }
+
+            &--items {
+                width: 500px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &__art {
+                    display: flex;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        padding: 10px;
+                        border-radius: 15px;
+                        background-color: #464751;
+                    }
+
+                    h4 {
+                        font-size: 14px;
+                        font-weight: 400;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+
+        .hero__right {
+
+            img{
+                width: 100%;
+            }
+            flex: 1; // Esto es el espasiad de cada hero__right
+
+            // El grid de las imagenes
+            display: grid;
+            grid-template-areas: 
+            'uno tres cinco'
+            'uno cuatro cinco'
+            'dos cuatro cinco';
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 200px);
+            gap: 25px;
+            
+            img.uno {
+                background-color: #6E1FED;
+                grid-area: uno;
+                border-radius: 80px;
+            }
+            
+            img.dos {
+                background-color: #DB2A6B;
+                grid-area: dos;
+                border-radius: 80px;
+            }
+
+            img.tres {
+                background-color: #60D3D9;
+                grid-area: tres;
+                border-radius: 80px;
+            }
+
+            img.cuatro {
+                background-color: #FF7E29;
+                grid-area: cuatro;
+                border-radius: 80px;
+            }
+
+            img.cinco {
+                background-color: #F4B840;
+                grid-area: cinco;
+                border-radius: 80px;
+                align-self: center;
+            }
+        }
     }
 }
