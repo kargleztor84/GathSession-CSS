@@ -1,0 +1,5 @@
+@use '../themes/default';
+
+body {
+    background-color: default.$default-theme-color;
+}

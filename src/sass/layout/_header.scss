@@ -1,3 +1,34 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .container {
+        @extend .flex;
+
+        .header__nav {
+            
+            &--navBar {
+                padding-inline: 50px;
+                @extend .flex;
+                gap: 20px;
+                
+                a {
+                    padding: 8px 20px;
+                    font-size: 16px;
+                    font-weight: 200;
+                    position: relative;
+                    // El hover esta en el modulo _base.scss y la funcion del evento hover esta en _mixin.scs
+                }
+            }
+        }
+    }
+}
