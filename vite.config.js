@@ -7,5 +7,5 @@ export default defineConfig ({
         }
     },
 
-    base: 'https://kargleztor84.github.io/GathSession-CSS/',
+    base: 'https://kargleztor84.github.io',
 })
