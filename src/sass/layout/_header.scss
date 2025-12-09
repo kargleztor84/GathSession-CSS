@@ -12,7 +12,7 @@
 header {
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 
     .container {
         @extend .flex;
@@ -20,9 +20,8 @@ header {
         .header__nav {
             
             &--navBar {
-                padding-inline: 50px;
+                padding-right: 40px;
                 @extend .flex;
-                gap: 10px;
                 
                 a {
                     padding: 8px 20px;

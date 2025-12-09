@@ -5,7 +5,6 @@ main {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 40px;
 
         .hero__left {
             align-self: flex-end;
@@ -13,13 +12,14 @@ main {
 
             &--title {
                 font-family: abstracts.$code-font-stack;
-                font-size: 54px;
+                font-size: 56px;
                 letter-spacing: 1px;
+                // line-height: 65px;
                 margin-bottom: 20px;
             }
 
             &--subtitle {
-                width: 90%;
+                width: 85%;
                 font-size: 16px;
                 font-weight: 100;
                 line-height: 30px;
@@ -71,10 +71,11 @@ main {
             }
 
             &--items {
-                width: 470px;
+                width: 430px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                gap: 25px;
 
                 &__art {
                     display: flex;
@@ -90,7 +91,7 @@ main {
                     h4 {
                         font-size: 14px;
                         font-weight: 400;
-                        padding: 10px;
+                        padding: 5px;
                     }
                 }
             }
@@ -110,40 +111,40 @@ main {
             'uno tres cinco'
             'uno cuatro cinco'
             'dos cuatro cinco';
-            grid-template-columns: repeat(3, 200px);
-            grid-template-rows: repeat(3, 200px);
-            gap: 23px;
+            grid-template-columns: repeat(3, 190px);
+            grid-template-rows: repeat(3, 190px);
+            gap: 25px;
             
             img.uno {
                 background-color: #6E1FED;
                 grid-area: uno;
-                border-radius: 80px;
+                border-radius: 70px;
                 align-self: center;
             }
             
             img.dos {
                 background-color: #DB2A6B;
                 grid-area: dos;
-                border-radius: 80px;
+                border-radius: 70px;
             }
 
             img.tres {
                 background-color: #60D3D9;
                 grid-area: tres;
-                border-radius: 80px;
+                border-radius: 70px;
             }
 
             img.cuatro {
                 background-color: #FF7E29;
                 grid-area: cuatro;
-                border-radius: 80px;
+                border-radius: 70px;
                 align-self: center;
             }
 
             img.cinco {
                 background-color: #F4B840;
                 grid-area: cinco;
-                border-radius: 80px;
+                border-radius: 70px;
                 align-self: center;
             }
         }
