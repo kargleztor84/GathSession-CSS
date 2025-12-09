@@ -13,14 +13,14 @@ main {
 
             &--title {
                 font-family: abstracts.$code-font-stack;
-                font-size: 65px;
+                font-size: 54px;
                 letter-spacing: 1px;
                 margin-bottom: 20px;
             }
 
             &--subtitle {
-                width: 85%;
-                font-size: 18px;
+                width: 90%;
+                font-size: 16px;
                 font-weight: 100;
                 line-height: 30px;
                 letter-spacing: 1px;
@@ -71,7 +71,7 @@ main {
             }
 
             &--items {
-                width: 500px;
+                width: 470px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -101,6 +101,7 @@ main {
             img{
                 width: 100%;
             }
+
             flex: 1; // Esto es el espasiad de cada hero__right
 
             // El grid de las imagenes
@@ -109,14 +110,15 @@ main {
             'uno tres cinco'
             'uno cuatro cinco'
             'dos cuatro cinco';
-            grid-template-columns: repeat(3, 220px);
-            grid-template-rows: repeat(3, 220px);
-            gap: 25px;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 200px);
+            gap: 23px;
             
             img.uno {
                 background-color: #6E1FED;
                 grid-area: uno;
                 border-radius: 80px;
+                align-self: center;
             }
             
             img.dos {
@@ -135,6 +137,7 @@ main {
                 background-color: #FF7E29;
                 grid-area: cuatro;
                 border-radius: 80px;
+                align-self: center;
             }
 
             img.cinco {
